@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { TitleComponent } from "./title/title.component";
-import { HeaderComponent } from './header/header.component';
-import { ContextComponent } from './context/context.component';
-import { PieComponent } from './pie/pie.component';
+import { TitleComponent } from "./graphics/title/title.component";
+import { HeaderComponent } from './graphics/header/header.component';
+import { ContextComponent } from './graphics/context/context.component';
+import { PieComponent } from './graphics/pie/pie.component';
 import { RouterLink } from '@angular/router';
 import { DetailsComponent } from './pages/details/details.component';
-import { NumbersComponent } from './numbers/numbers.component';
-import { LineComponent } from './line/line.component';
+import { NumbersComponent } from './graphics/numbers/numbers.component';
+import { LineComponent } from './graphics/line/line.component';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NotFoundComponent, DetailsComponent],
