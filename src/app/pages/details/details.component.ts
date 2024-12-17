@@ -1,13 +1,18 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { OlympicService } from 'src/app/core/services/olympic.service';
 
 @Component({
   selector: 'app-details',
-  standalone: true,
-  imports: [RouterLink],
   templateUrl: './details.component.html',
   styleUrl: './details.component.scss'
 })
-export class DetailsComponent {
+export class DetailsComponent implements OnInit{
+  public olympics$: Observable<any> = of(null);
 
+  constructor(private olympicService: OlympicService) {}
+
+  ngOnInit(): void {
+    this.olympics$ = this.olympicService.getOlympics();
+}
 }
