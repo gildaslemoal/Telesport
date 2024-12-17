@@ -8,8 +8,8 @@ example of an olympic country:
 }
 */
 
-export class Olympics {
-    constructor(public id: number,
-                public country: string,
-                public participations:[]) {}
-  }
+export interface Olympics {
+    id: number;
+    country: string;
+    participations:[]
+    }

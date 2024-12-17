@@ -13,6 +13,7 @@ import { RouterLink } from '@angular/router';
 import { DetailsComponent } from './pages/details/details.component';
 import { NumbersComponent } from './graphics/numbers/numbers.component';
 import { LineComponent } from './graphics/line/line.component';
+import { OlympicService } from './core/services/olympic.service';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NotFoundComponent, DetailsComponent],
