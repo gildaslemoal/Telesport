@@ -7,5 +7,6 @@
 <app-pie></app-pie>
 <hr />
 <p>{{ (olympics$ | async)?.length }} data loaded</p>
+<p>{{ olympics$ | async | json }}</p>
 <hr />
 <a routerLink="details">Détails pour tous les pays</a>

@@ -14,11 +14,14 @@ import { DetailsComponent } from './pages/details/details.component';
 import { NumbersComponent } from './graphics/numbers/numbers.component';
 import { LineComponent } from './graphics/line/line.component';
 import { OlympicService } from './core/services/olympic.service';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NotFoundComponent, DetailsComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, TitleComponent, HeaderComponent, ContextComponent, PieComponent, RouterLink, NumbersComponent, LineComponent],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
