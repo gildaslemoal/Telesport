@@ -7,6 +7,12 @@
 <app-pie></app-pie>
 <hr />
 <p>{{ (olympics$ | async)?.length }} data loaded</p>
-<p>{{ olympics$ | async | json }}</p>
+<p>{{ totalCountries }}</p>
+<p>@for ( element of ItemsObjects; track element.id) {
+    <li>{{ element.colors }}</li>
+    } @empty {
+    <li>There are no colors.</li>
+    }
+</p>
 <hr />
 <a routerLink="details">Détails pour tous les pays</a>

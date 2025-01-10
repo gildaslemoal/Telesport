@@ -2,8 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
-import { Olympics } from '../models/Olympic';
-import { Participation } from '../models/Participation';
 
 @Injectable({
   providedIn: 'root',
